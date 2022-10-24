@@ -29,35 +29,23 @@
     </div>
   </div>
 </nav>
-	<div style="min-width:350px;">
+	<form action="db.php" method="post">
        <div class="container-fluid">
        	  <div class="p-4  mx-auto shadow rounded" style="width:100%; max-width:340px; margin-top: 50px;">
-       	  	<h2 class="text-capitalize text-center ">gestion enployés</h2>
-                 <hr>
-       	  
-       	  	<h5>SOCIETE GENERAL </h5>
-       	  
-       	  	 <br>
-                  <br>
-       	    
-
-       	  	 <br>
-                  <hr>
-                 
-                  <?php 
-    session_start();
-    if (empty($_SESSION['nom'])) {
-        $nom=$_SESSION['nom'];
       
- header("location:inscription.php");
+       	  	<img src="assets/images/t.png" class=" =  rounded-circle mx-auto d-block" style="width: 140px;">
+       	  	<h3>Connexion</h3>
 
-}
-?>
-          
+				  <input type="email" class="my-2 form-control" placeholder="Email" name="mail">
+				  <input type="password" class="my-2 form-control" placeholder="Mot de passe" name="pass">
+				
+       	   
+       	  	 <button class=" btn btn-primary" type="submit" name="enregistrer">Connexion</button>
        	  </div>
+		
        </div>
-	   </div>
-	<script src="assets/bootstrap.bundle.min.js"></script>
+	   </form>
+	   <script src="assets/bootstrap.bundle.min.js"></script>
     <script src="assets/bootstrap.min.js"></script>
 </body>
 </html> 

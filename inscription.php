@@ -30,11 +30,14 @@
         <li class="nav-item">
           <a class="nav-link" href="inscription.php">inscription</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Connexion.php">Connexion</a>
+        </li>    
       </ul>
     </div>
   </div>
 </nav>
-	<form action="" method="post">
+	<form action="connect.php" method="post">
        <div class="container-fluid">
        	  <div class="p-4  mx-auto shadow rounded" style="width:100%; max-width:340px; margin-top: 50px;">
       
