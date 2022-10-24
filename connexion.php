@@ -29,7 +29,7 @@
     </div>
   </div>
 </nav>
-	<form action="db.php" method="post">
+	<form action="alternative.php" method="post">
        <div class="container-fluid">
        	  <div class="p-4  mx-auto shadow rounded" style="width:100%; max-width:340px; margin-top: 50px;">
       
