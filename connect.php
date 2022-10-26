@@ -9,7 +9,7 @@ $conn = new mysqli('localhost', 'root', '','test1');
 if($conn->connect_error){
     die('Connection failed: '.$cconn->connect_error);
 }else{
-    $stmt = $conn->prepare("insert into inscription(nom, prenom, email, password) values (?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT into inscription(nom, prenom, email, password) values (?, ?, ?, ?)");
     $hash = password_hash($password, PASSWORD_DEFAULT);
     $stmt ->bind_param("ssss",$nom, $prenom, $email, $hash);
     $stmt ->execute();

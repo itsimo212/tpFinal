@@ -20,10 +20,10 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="inscription.php">inscription</a>
+          <a class="nav-link" href="inscription.html">inscription</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Connexion.php">Connexion</a>
+          <a class="nav-link" href="Connexion.html">Connexion</a>
         </li>    
       </ul>
     </div>
@@ -49,7 +49,7 @@
     if (empty($_SESSION['nom'])) {
         $nom=$_SESSION['nom'];
       
- header("location:inscription.php");
+ header("location:inscription.html");
 
 }
 ?>
