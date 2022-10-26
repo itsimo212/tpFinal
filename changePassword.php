@@ -26,8 +26,7 @@
 			$query= "UPDATE inscription set password='$hash' where email ='$mail'";
 			$update_pwd=mysqli_query($conn,$query);
 			echo "<script>alert('Update Sucessfully'); window.location='index.php'</script>";
-		}
-		else{
+		}else{
 			echo "<script>alert('Your new and Retype Password is not match'); window.location='index.php'</script>";
 		}
 	}
